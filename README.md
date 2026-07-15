@@ -177,7 +177,7 @@ least 3 specific recommendations.
 | Phase | Status |
 |---|---|
 | 1 — Data Cleaning & Quality Report | ✅ Complete |
-| 2 — Exploratory Data Analysis | ⏳ Not started |
+| 2 — Exploratory Data Analysis | ✅ Complete |
 | 3 — KPI Calculations | ⏳ Not started |
 | 4 — Dashboard & Management Report | ⏳ Not started |
 
@@ -188,6 +188,15 @@ business-logic and referential-integrity checks (churn date ordering, active/chu
 consistency, watch duration validity, completion % accuracy, foreign key integrity
 across all child tables, category value consistency) passed with zero violations.
 Full detail in `notebooks/Phase1_DataCleaning_Eram.ipynb`.
+
+**Phase 2 summary:** All 10 required charts built with written observations. Viewing
+volume and watch hours show sustained, accelerating growth across the platform's
+history. Drama, Comedy, and Action are the top genres by watch hours; Movies edge out
+TV Shows (59% vs. 41%) in session share. The US is the largest market by a wide
+margin, though India, South Korea, and Brazil show meaningful engagement. Plan
+distribution is close to an even 3-way split. Smart TV and Mobile dominate device
+usage. Completion rate is consistent across genres (~65% band). Review sentiment
+skews strongly positive (68%). Full detail in `notebooks/Phase2_EDA_Eram.ipynb`.
 
 ## Evaluation rubric
 
@@ -205,7 +214,7 @@ Total: 100 marks (+5 bonus)
 ## Submission checklist
 
 - [x] `Phase1_DataCleaning_Eram.ipynb`
-- [ ] `Phase2_EDA_Eram.ipynb` (all 10 charts, also saved as PNG)
+- [x] `Phase2_EDA_Eram.ipynb` (all 10 charts, also saved as PNG)
 - [ ] `Phase3_KPIs_Eram.ipynb` (all 10 KPIs)
 - [ ] `Phase4_Dashboard_Eram.pbix`/`.xlsx` (5 pages, slicers)
 - [ ] `Phase4_Report_Eram.docx`/`.pdf` (2-3 pages)
